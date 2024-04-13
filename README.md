@@ -9,7 +9,6 @@ The robotic arm positions the glass correctly on the ice machine so that the ice
 While the ice falls into the glass, the robot arm holds the glass. It then returns the glass and returns to the starting position itself. 
 A total of 8 sub-movements have been defined, which enable an overall movement.
 
-
 1. From Home Postion to Glas
 2. Pick up the glas
 3. Hover to Ice Machine 
@@ -22,6 +21,11 @@ A total of 8 sub-movements have been defined, which enable an overall movement.
 ### Video of robot gets ice cubes
 [Video of robot gets ice cubes](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0292e08a-dd6c-4daa-80a3-537b58f087ec)
 
+
+# CPEE for Process Control
+[Endpoints](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/bdba5dd6-84ad-4598-aa1d-f44debefbe53)
+
+[Process Architecture](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/7d231a92-ffd1-4e47-b2c4-10adc50b6182)
 
 
 
