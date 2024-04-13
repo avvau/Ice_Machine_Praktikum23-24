@@ -60,7 +60,7 @@ Below you can see the pictures of how the box looks and the comparison with the 
 ![IMG_7004](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/295ba3af-56b7-473c-9280-91b4521666a9)
 
 For The 3D print I used the Tinkcard programme.
-Link to the WebPage: [https://www.tinkercad.com] (https://www.tinkercad.com)
+Link to the WebPage: [https://www.tinkercad.com]
 Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time.
 Below you will find pictures of the box design in the programme:
 <img width="634" alt="Bildschirmfoto 2024-04-13 um 12 34 52" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/1cafd8a7-52c4-430c-b9a9-aa2d23e288b9">
