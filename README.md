@@ -19,7 +19,10 @@ A total of 8 sub-movements have been defined, which enable an overall movement.
 7. Put glas down to start postion
 8. Arm goes back to home Position
 
-[can Video]
+### Video of robot gets ice cubes
+[Video of robot gets ice cubes](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0292e08a-dd6c-4daa-80a3-537b58f087ec)
+
+
 
 
 # Ice Machine 
