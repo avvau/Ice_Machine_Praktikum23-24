@@ -66,16 +66,14 @@ For The 3D print I used the Tinkcard programme.
 Link to the WebPage: [https://www.tinkercad.com]
 Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time.
 Below you will find pictures of the box design in the programme:
+
+
 <img width="634" alt="Bildschirmfoto 2024-04-13 um 12 34 52" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/1cafd8a7-52c4-430c-b9a9-aa2d23e288b9">
 <img width="469" alt="Bildschirmfoto 2024-04-13 um 12 35 25" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/3edbc452-8dfe-4640-86d5-79574713159e">
 <img width="602" alt="Bildschirmfoto 2024-04-13 um 23 30 13" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/021bb4e5-4c05-473f-b2ac-098df990aa75">
 <img width="408" alt="Bildschirmfoto 2024-04-13 um 23 29 48" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/7b896d0b-dee8-43f8-97f9-57f3bca33338">
 <img width="714" alt="Bildschirmfoto 2024-04-13 um 23 30 42" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/d6d9f0bd-ad1c-44f2-a256-e658d1ace917">
 <img width="714" alt="Bildschirmfoto 2024-04-13 um 23 30 52" src="https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/65be7d99-9076-41a6-ad32-ca20fd48909f">
-
-Here is the file for the SL
-
-
 
 
 
