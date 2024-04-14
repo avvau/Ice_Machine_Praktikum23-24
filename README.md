@@ -10,19 +10,17 @@
 - 3D Print
 
 # Context
-The aim of our praktikum was to make a cocktail mix with the robot. My part of the cocktail mixing task is to fill the glass with ice cubes with the help of the robot so that the drinks stay cool.
-To do this, the robot positions the glass on the ice cube machine so that the ice cubes fall directly into the glass. While the ice cubes fall into the glass, the robot continues to hold the glass. It then puts the glass back and returns to its starting position.
-A total of 8 sub-movements have been defined, which enable an overall movement. The CPEE environment is used for process control.
+Our practical assignment focused on creating a cocktail mix using a robotic. My task within this assignment involved ensuring the drinks remain chilled by filling the glass with ice cubes, facilitated by the robot's assistance. The robot precisely positions the glass beneath the ice cube dispenser, allowing the cubes to fall directly into it. Throughout this process, the robot securely holds the glass to prevent any spillage. Once the glass is filled, the robot places it back and returns to its initial position. This task is accomplished through the coordination of 8 distinct sub-movements, which collectively achieve the desired outcome. We utilized the CPEE environment for process control.
 
 #### a. The 8 sub-movements
-1. `From home postion to glas`
-2. `Pick up the glas`
-3. `Hover to ice machine` 
-4. `Bring the glas on the ice machine `
-5. `Wait until glas is filled with ice`
-6. `Move glas away from the ice machine` 
-7. `Put glas down to start postion`
-8. `Robot goes back to home position`
+1. `Home Position to Glass`
+2. `Retrieve the Glass`
+3. `Hover Over the Ice Machine` 
+4. `Place the Glass on the Ice Machine `
+5. `Allow the Glass to Fill with Ice`
+6. `Move the Glass Away from the Ice Machine` 
+7. `Set the Glass Down to Its Starting Position`
+8. `Return the Robot to Its Home Position`
 
 #### b. Video of robot gets ice cubes
 [Video of robot gets ice cubes](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0292e08a-dd6c-4daa-80a3-537b58f087ec)
@@ -38,33 +36,33 @@ A total of 8 sub-movements have been defined, which enable an overall movement. 
 
 ### How the endpoints are connected with the architecture
 ##### 1. Starttohover
-The process engine starts with the `Starttohover` process. This process is connected with the `hometohover`endpoint. It moves the robot from its starting position to the start position to start the process.
+The process engine initiates with the `Starttohover` process, linked to the `hometohover` endpoint. This process orchestrates the movement of the robot from its initial position to the designated start position, thus commencing the subsequent processes..
 ##### 2.GotoGlass
-The process `GoToGlas` is connected with the endpoint `hovertoglas`. This means that the robot positions itself at the height of the glass in order to pick it up.
+The `GoToGlas` process is linked with the `hovertoglas` endpoint. This configuration enables the robot to align itself with the height of the glass, facilitating the subsequent task of picking it up.
 ##### 3. GoToMachine
-The process `GoToMachine` is connected with the endpoint `hovertomachine`. In this process, the robot brings the glass to the height of the ice cube machine 
+The process `GoToMachine` is linked with the endpoint `hovertomachine`. This process involves the robot positioning the glass at the same height as the ice cube machine.
 ##### 4. PutGlasDown
-The process `PutGlasDown` is connected with the endpoint `putglasdown`. But here, the glass is not put under the opening from which the ice cubes fall out, as one would assume from the description. Instead, the robot holds the glass so close to the opening so that the ice cubes can fall directly into the glass and do not jump out from the side.
+The process `PutGlasDown` is associated with the endpoint `putglasdown`. However, contrary to the expected procedure of placing the glass directly beneath the opening from which the ice cubes fall, the robot positions the glass in close proximity to the opening. This proximity ensures that the ice cubes fall directly into the glass, minimizing the risk of any cubes bouncing out from the sides.
 ![IMG_7734](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/489b9813-6422-4f03-b01e-9df140182007)
 ##### 5. Ice Machine
-The process `Ice Machine` is connected with the endpoint `getIce`. In this process, ice cubes come out of the ice machine. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL.
+The `Ice Machine` process is linked with the endpoint `getIce`. During this process, ice cubes are dispensed from the ice machine. A server call with a waiting duration of 5 seconds is implemented here, allowing for the retrieval of the ice cubes. This waiting time can be customized within the endpoints through the URL parameters.
 ##### 6. GoAway
-The process `GoAway` is connected with the endpoint `awayicemachine`. The filled glass with ice cubes is now removed from the ice cube machine.
+The process `GoAway` is connected with the endpoint `awayicemachine`. This step involves removing the glass, now filled with ice cubes, from the ice cube machine.
 ##### 7. DropGlas
-The process `DropGlas` is connected with the endpoint `dropglas`. The glass is returned to the starting position and then put down.
+The process `DropGlas` is connected with the endpoint `dropglas`. It involves returning the glass to its initial position before gently placing it down.
 ##### 8. BackToStart
-The process `BackToStart` is connected with the endpoint `backtostart`. Finally, the robot returns to its starting position.
-
+The process `BackToStart` is linked with the endpoint `backtostart`. This final step involves the robot returning to its initial starting position.
 
 # Ice Machine 
-An ice machine from the manufacturer Klarstein was used for the project. Inside there is a water tank, a cup for making the ice cubes and a spiral that pushes the finished ice into the dispenser. After the ice cube machine has been plugged into the socket, the on/off symbol appears on the display.
-#### To switch the machine on, press the on/off button. So that the display looks like this:
+An ice machine from Klarstein was used for the project. This machine has a water tank, an ice cube mould and a spiral mechanism that transports the freshly made ice into the dispenser. When the ice machine is plugged into a socket, the on/off symbol appears on the display panel.
+#### To activate the machine, simply press the on/off button. This action will result in the display appearing as follows:
 ![59B8C38F-99DA-40E5-9F92-4835F0F51B44](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0776b5dc-eb08-4ba0-8141-29ae59371ba2)
 
 # Circuit
-The circuit was already assembled last year. There is a multicontroller and an FT232 chip. This allows it to be connected to a computer via a USB-C connection. On the other side, several pins are available for connecting electronic components. Of the pins described above, VCC and RTS were used to build the circuit. For a more detailed documentation see the [git repository from last year](https://gitlab.lrz.de/000000000149F516/tum-prac.git). 
+The circuit was assembled last year, comprising a multicontroller and an FT232 chip. This configuration enables connection to a computer via a USB interface. On the opposite side, multiple pins are provided for connecting electronic components. Among these pins, VCC and RTS were utilized in constructing the circuit. For further detailed documentation, please refer to the [git repository from last year](https://gitlab.lrz.de/000000000149F516/tum-prac.git). 
 
-The following pictures show how the pins were connected so that they can be reconnected if something should come loose.
+
+The following images illustrate the pin connections, facilitating easy reconnection in case of any disconnection:
 ![70C0D7CB-EFC6-41F7-BC74-27A6205E7CF9 2](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/b6f06479-32a7-4d87-81cf-4d1e3be6be06)
 ![6253D19A-D63D-412D-A692-30F02F3C0D7B 2](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/d7f9c091-b195-404f-9c33-63bee672780a)
 ![3F5FF154-71EE-4A50-9B7D-52D13251CE9E 2](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/f091c205-4247-471e-9588-e9eb4465d806)
@@ -77,7 +75,7 @@ The Python code of the server is located on the lab computer under `/project/ice
 
 
 # Box
-To store the multicontroller and FT232-Chip, I replaced last year's box with a larger and more functional box and 3D printed the new box. The box has a sliding lid. There is a small knob on the sliding lid which makes it easier to open the box. The box has two holes. One hole for the cables and one for the USB connection. The holes are extended on the inside with a holder so that the inserted cables are not kinked.
+To accommodate the multicontroller and the FT232 chip, I replaced last year's box with a larger and more practical one that I 3D printed. This new box has a sliding lid for easy access. A small button on the sliding lid makes it easy to open. The case also has two openings: one for the cables and another for the USB port. Inside the box, these holes are extended by holders to prevent the inserted cables from being kinked or crushed.
 
 ### Pictures of the current box and comparison with the old box:
 
