@@ -1,10 +1,19 @@
 # Ice_Machine_Praktikum23-24
 
+# Structure
+- Context
+- CPEE for process control
+- Ice Machine
+- Circuit
+- Box
+- 3D Print
+
 # Context
-This repository  describes the development of a robot to operate an ice-machine. The aim is for the robot to mix a cocktail. My part of the cocktail mixing task is to fill the glass with ice cubes with the help of the robot so that the drinks stay cool.
+The aim of our praktikum was to make a cocktail mix with the robot. My part of the cocktail mixing task is to fill the glass with ice cubes with the help of the robot so that the drinks stay cool.
 To do this, the robot positions the glass on the ice cube machine so that the ice cubes fall directly into the glass. While the ice cubes fall into the glass, the robot continues to hold the glass. It then puts the glass back and returns to its starting position.
 A total of 8 sub-movements have been defined, which enable an overall movement. The CPEE environment is used for process control.
 
+#### a. The 8 sub-movements
 1. From home postion to glas
 2. Pick up the glas
 3. Hover to ice machine 
@@ -14,18 +23,36 @@ A total of 8 sub-movements have been defined, which enable an overall movement. 
 7. Put glas down to start postion
 8. Robot goes back to home position
 
-### Video of robot gets ice cubes
+#### b. Video of robot gets ice cubes
 [Video of robot gets ice cubes](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0292e08a-dd6c-4daa-80a3-537b58f087ec)
 
 
-# CPEE for Process Control
+# CPEE for process control
 > CPEE is in the process hub folder [TUM-Prak-23-WS](https://cpee.org/flow/edit.html?monitor=https://cpee.org/flow/engine/36621/) or `CPEE`
-- Process Execution Engine Endpoints
+## Process Execution Engine Endpoints
 ![Endpoints](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/bdba5dd6-84ad-4598-aa1d-f44debefbe53)
 
-- Process Execution Engine Architecture
+## Process Execution Engine Architecture
 ![Process Architecture](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/7d231a92-ffd1-4e47-b2c4-10adc50b6182)
 
+### How the endpoints are connected with the architecture
+##### 1. Starttohover
+The process engine starts with the `Starttohover` process. This process is connected with the `hometohover`endpoint. It moves the robot from its starting position to the start position to start the process.
+##### 2.GotoGlass
+The process `GoToGlas` is connected with the endpoint `hovertoglas`. This means that the robot positions itself at the height of the glass in order to pick it up.
+##### 3. GoToMachine
+The process `GoToMachine` is connected with the endpoint `hovertomachine`. In this process, the robot brings the glass to the height of the ice cube machine 
+##### 4. PutGlasDown
+The process `PutGlasDown` is connected with the endpoint `putglasdown`. But here, the glass is not put under the opening from which the ice cubes fall out, as one would assume from the description. Instead, the robot holds the glass so close to the opening so that the ice cubes can fall directly into the glass and do not jump out from the side.
+![IMG_7734](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/489b9813-6422-4f03-b01e-9df140182007)
+##### 5. Ice Machine
+The process `Ice Machine` is connected with the endpoint `getIce`. In this process, ice cubes come out of the ice machine. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL.
+##### 6. GoAway
+The process `GoAway` is connected with the endpoint `awayicemachine`. The filled glass with ice cubes is now removed from the ice cube machine.
+##### 7.DropGlas
+The process `DropGlas` is connected with the endpoint `dropglas`. The glass is returned to the starting position and then put down.
+##### 8. BackToStart
+The process `BackToStart` is connected with the endpoint `backtostart`. Finally, the robot returns to its starting position.
 
 
 # Ice Machine 
@@ -49,10 +76,9 @@ The Python code of the server is located on the lab computer under `/project/ice
 
 
 # Box
-To store the multicontroller and the switch well, I replaced last year's box with a larger and more functional box and 3D printed the new box. The box has a sliding lid. There is a small knob on the sliding lid which makes it easier to open the box. The box has two holes. 
-One hole for the cables and one for the USB stick connection. The holes are extended from the inside with a holder from the inside so that the inserted cables do not kink. 
+To store the multicontroller and FT232-Chip, I replaced last year's box with a larger and more functional box and 3D printed the new box. The box has a sliding lid. There is a small knob on the sliding lid which makes it easier to open the box. The box has two holes. One hole for the cables and one for the USB connection. The holes are extended on the inside with a holder so that the inserted cables are not kinked.
 
-### Pictures of the current box looks and the comparison with the old box:
+### Pictures of the current box and comparison with the old box:
 
 #### Current box
 ![IMG_7009 3](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/5a185c6c-f5ab-4c80-9261-2b62427c8af0)
@@ -66,16 +92,19 @@ One hole for the cables and one for the USB stick connection. The holes are exte
 #### Back side
 ![IMG_7004](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/295ba3af-56b7-473c-9280-91b4521666a9)
 
+# 3D Print
 For The 3D print I used the Tinkcard programme.
-Link to the WebPage: [Tinkgard](https://www.tinkercad.com).
+Link to the WebPage: [Tinkcard](https://www.tinkercad.com).
 <br>
-Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be bound here: `3D print`
+Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be found here in the repository under the folder name `3D print`
 
 ### Tinkcard Design:
 #### Dimensions of the box
+> The dimensions are given in inches
 ![TEST](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/1cafd8a7-52c4-430c-b9a9-aa2d23e288b9)
 
 #### Dimensions of the lid
+> The dimensions are given in inches
 ![TEST](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/3edbc452-8dfe-4640-86d5-79574713159e)
 
 #### Upper view
