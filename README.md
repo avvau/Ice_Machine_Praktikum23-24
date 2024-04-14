@@ -49,7 +49,7 @@ The `Ice Machine` process is linked with the endpoint `getIce`. During this proc
 ##### 6. GoAway
 The process `GoAway` is connected with the endpoint `awayicemachine`. This step involves removing the glass, now filled with ice cubes, from the ice cube machine.
 ##### 7. DropGlas
-The process `DropGlas` is connected with the endpoint `dropglas`. It involves returning the glass to its initial position before gently placing it down.
+The process `DropGlas` is connected with the endpoint `dropglas`. It involves returning the glass to its initial position before placing it down.
 ##### 8. BackToStart
 The process `BackToStart` is linked with the endpoint `backtostart`. This final step involves the robot returning to its initial starting position.
 
