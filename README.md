@@ -96,7 +96,7 @@ To store the multicontroller and FT232-Chip, I replaced last year's box with a l
 For The 3D print I used the Tinkcard programme.
 Link to the WebPage: [Tinkcard](https://www.tinkercad.com).
 <br>
-Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be found here in the repository under the folder name `3D print`
+Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be found here in the repository under the folder name `3D print` The files were separated into [box](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/76ea0e92f8df307696dbfda43d05e6d6cca4ce1b/3D%20print/Box%20files) and [Deckel]
 
 ### Tinkcard Design:
 #### Dimensions of the box
