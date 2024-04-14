@@ -54,13 +54,13 @@ The process `DropGlas` is connected with the endpoint `dropglas`. It involves re
 The process `BackToStart` is linked with the endpoint `backtostart`. This final step involves the robot returning to its initial starting position.
 
 # Ice Machine 
-An ice machine from Klarstein was used for the project. This machine has a water tank, an ice cube mould and a spiral mechanism that transports the freshly made ice into the dispenser. When the ice machine is plugged into a socket, the on/off symbol appears on the display panel. Last year, the ice cube machine was completely rebuilt to enable automatic control. In this context, the housing of the machine was opened and the control board was extended. For further detailed documentation, please [click here](https://gitlab.lrz.de/000000000149F516/tum-prac.git) to go to last year's git repository.
+An ice machine from Klarstein was used for the project. This machine has a water tank, an ice cube mould and a spiral mechanism that transports the freshly made ice into the dispenser. When the ice machine is plugged into a socket, the on/off symbol appears on the display panel. Last year, the ice cube machine was completely rebuilt to enable automatic control. In this context, the housing of the machine was opened and the control board was extended such that the ice machine can be controlled by a microcontroller. For further detailed documentation, please [click here](https://gitlab.lrz.de/000000000149F516/tum-prac.git) to go to last year's git repository.
 
 #### To activate the machine, simply press the on/off button. This action will result in the display appearing as follows:
 ![59B8C38F-99DA-40E5-9F92-4835F0F51B44](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0776b5dc-eb08-4ba0-8141-29ae59371ba2)
 
 # Circuit
-The circuit was assembled last year, comprising a multicontroller and an FT232 chip. This configuration enables connection to a computer via a USB interface. On the opposite side, multiple pins are provided for connecting electronic components. Among these pins, VCC and RTS were utilized in constructing the circuit. For further detailed documentation, please [click here](https://gitlab.lrz.de/000000000149F516/tum-prac.git)  to go to last year's git repository.
+The circuit was assembled last year, comprising a multicontroller and an FT232 chip. This configuration enables connection to a computer via a USB interface. On the opposite side, multiple pins are provided for connecting electronic components. Among these pins, VCC and RTS were utilized in constructing the circuit. For further detailed documentation, please [click here](https://gitlab.lrz.de/000000000149F516/tum-prac.git) to go to last year's git repository.
 
 The following images illustrate the pin connections, facilitating easy reconnection in case of any disconnection:
 ![70C0D7CB-EFC6-41F7-BC74-27A6205E7CF9 2](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/b6f06479-32a7-4d87-81cf-4d1e3be6be06)
@@ -71,7 +71,6 @@ The following images illustrate the pin connections, facilitating easy reconnect
 # Server
 The server did not receive new features, however, minor improvements have been made. The name of the port on which the server expects the ice machine was previously hard-coded. Plugging and unplugging the machine from the server could therefore result in the port being renamed and the Python server no longer having a connection to the ice machine. The port can now be statically located under the following symlink: `/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_B001B4FM-if00--port0 `. This means that you no longer need to adapt the device name.
 The Python code of the server is located on the lab computer under `/project/ice-machine/icemachine.py`.
-
 
 
 # Box
