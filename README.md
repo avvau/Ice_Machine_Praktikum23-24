@@ -37,7 +37,7 @@ Our practical assignment focused on creating a cocktail mix using a robot. My ta
 ### How the endpoints are connected with the architecture
 ##### 1. Starttohover
 The process engine initiates with the `Starttohover` process, linked to the `hometohover` endpoint. This process orchestrates the movement of the robot from its initial position to the designated start position, thus commencing the subsequent processes..
-##### 2.GotoGlass
+##### 2.GoToGlass
 The `GoToGlas` process is linked with the `hovertoglas` endpoint. This configuration enables the robot to align itself with the height of the glass, facilitating the subsequent task of picking it up.
 ##### 3. GoToMachine
 The process `GoToMachine` is linked with the endpoint `hovertomachine`. This process involves the robot positioning the glass at the same height as the ice cube machine.
