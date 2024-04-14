@@ -46,7 +46,7 @@ The process `GoToMachine` is connected with the endpoint `hovertomachine`. In th
 The process `PutGlasDown` is connected with the endpoint `putglasdown`. But here, the glass is not put under the opening from which the ice cubes fall out, as one would assume from the description. Instead, the robot holds the glass so close to the opening so that the ice cubes can fall directly into the glass and do not jump out from the side.
 ![IMG_7734](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/489b9813-6422-4f03-b01e-9df140182007)
 ##### 5. Ice Machine
-The process `Ice Machine` is connected with the endpoint `getIce`. In this process, ice cubes come out of the ice machine. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL.
+The process `Ice Machine` is connected with the endpoint `getIce`. In this process, ice cubes come out of the ice machine. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL.
 ##### 6. GoAway
 The process `GoAway` is connected with the endpoint `awayicemachine`. The filled glass with ice cubes is now removed from the ice cube machine.
 ##### 7. DropGlas
