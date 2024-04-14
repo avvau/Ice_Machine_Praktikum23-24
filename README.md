@@ -54,7 +54,7 @@ The process `DropGlas` is connected with the endpoint `dropglas`. It involves re
 The process `BackToStart` is linked with the endpoint `backtostart`. This final step involves the robot returning to its initial starting position.
 
 # Ice Machine 
-An ice machine from Klarstein was used for the project. This machine has a water tank, an ice cube mould and a spiral mechanism that transports the freshly made ice into the dispenser. When the ice machine is plugged into a socket, the on/off symbol appears on the display panel.
+An ice machine from Klarstein was used for the project. This machine has a water tank, an ice cube mould and a spiral mechanism that transports the freshly made ice into the dispenser. When the ice machine is plugged into a socket, the on/off symbol appears on the display panel. Last year, the ice cube machine was completely rebuilt to enable automatic control. In this context, the housing of the machine was opened and the control board was extended. For further detailed documentation, please refer to the [git repository from last year](https://gitlab.lrz.de/000000000149F516/tum-prac.git)
 #### To activate the machine, simply press the on/off button. This action will result in the display appearing as follows:
 ![59B8C38F-99DA-40E5-9F92-4835F0F51B44](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0776b5dc-eb08-4ba0-8141-29ae59371ba2)
 
@@ -96,7 +96,7 @@ For the 3D print I used the Tinkcard programme.
 <br>
 Link to the WebPage: [Tinkcard](https://www.tinkercad.com).
 <br>
-Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be found here in the repository under the folder name [3D print](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/899551233907259fdd71c0b20a0c31b6a81b5334/3D%20print) The files were separated into [Box](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/76ea0e92f8df307696dbfda43d05e6d6cca4ce1b/3D%20print/Box%20files) and [Deckel](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/899551233907259fdd71c0b20a0c31b6a81b5334/3D%20print/Deckel%20files)
+Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be found here in the repository under the folder name [3D print](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/899551233907259fdd71c0b20a0c31b6a81b5334/3D%20print). The files were separated into [Box](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/76ea0e92f8df307696dbfda43d05e6d6cca4ce1b/3D%20print/Box%20files) and [Deckel](https://github.com/avvau/Ice_Machine_Praktikum23-24/tree/899551233907259fdd71c0b20a0c31b6a81b5334/3D%20print/Deckel%20files)
 
 ### Tinkcard Design:
 #### Dimensions of the box
