@@ -14,14 +14,14 @@ To do this, the robot positions the glass on the ice cube machine so that the ic
 A total of 8 sub-movements have been defined, which enable an overall movement. The CPEE environment is used for process control.
 
 #### a. The 8 sub-movements
-1. From home postion to glas
-2. Pick up the glas
-3. Hover to ice machine 
-4. Bring the glas on the ice machine 
-5. Wait until glas is filled with ice
-6. Move glas away from the ice machine 
-7. Put glas down to start postion
-8. Robot goes back to home position
+1. `From home postion to glas`
+2. `Pick up the glas`
+3. `Hover to ice machine` 
+4. `Bring the glas on the ice machine `
+5. `Wait until glas is filled with ice`
+6. `Move glas away from the ice machine` 
+7. `Put glas down to start postion`
+8. `Robot goes back to home position`
 
 #### b. Video of robot gets ice cubes
 [Video of robot gets ice cubes](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0292e08a-dd6c-4daa-80a3-537b58f087ec)
@@ -49,7 +49,7 @@ The process `PutGlasDown` is connected with the endpoint `putglasdown`. But here
 The process `Ice Machine` is connected with the endpoint `getIce`. In this process, ice cubes come out of the ice machine. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL. The server call wait with a duration of 5 seconds is used here. This time can be adjusted in the endpoints via the URL.
 ##### 6. GoAway
 The process `GoAway` is connected with the endpoint `awayicemachine`. The filled glass with ice cubes is now removed from the ice cube machine.
-##### 7.DropGlas
+##### 7. DropGlas
 The process `DropGlas` is connected with the endpoint `dropglas`. The glass is returned to the starting position and then put down.
 ##### 8. BackToStart
 The process `BackToStart` is connected with the endpoint `backtostart`. Finally, the robot returns to its starting position.
