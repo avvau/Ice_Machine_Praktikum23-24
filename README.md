@@ -75,7 +75,7 @@ The Python code of the server is located on the lab computer under `/project/ice
 
 
 # Box
-To accommodate the multicontroller and the FT232 chip, I replaced last year's box with a larger and more practical one that I 3D printed. This new box has a sliding lid for easy access. A small button on the sliding lid makes it easy to open. The case also has two openings: one for the cables and another for the USB port. Inside the box, these holes are extended by holders to prevent the inserted cables from being kinked or crushed.
+To store the multicontroller and the FT232 chip, I replaced last year's box with a larger and more practical box that I 3D printed. This new box has a sliding lid for easy access. A small button on the sliding lid makes it easy to open. The case also has two openings: one for the cables and another for the USB port. Inside the box, these holes are extended by holders to prevent the inserted cables from being kinked or crushed.
 
 ### Pictures of the current box and comparison with the old box:
 
