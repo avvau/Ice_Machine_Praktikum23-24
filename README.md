@@ -1,22 +1,18 @@
 # Ice_Machine_Praktikum23-24
 
 # Context
-This report describes the development of a robot to operate an ice-machine. 
-The robotic arm was designed to pick up a glass and guide it to the ice-machine. 
-
-# Description
-The robotic arm positions the glass correctly on the ice machine so that the ice can fall directly into the glass. 
-While the ice falls into the glass, the robot arm holds the glass. It then returns the glass and returns to the starting position itself. 
+This repository  describes the development of a robot to operate an ice-machine. The aim is for the robot to mix a cocktail. My part of the cocktail mixing task is to fill the glass with ice cubes with the help of the robot so that the drinks stay cool.
+To do this, the robot positions the glass on the ice cube machine so that the ice cubes fall directly into the glass. While the ice cubes fall into the glass, the robot continues to hold the glass. It then puts the glass back and returns to its starting position.
 A total of 8 sub-movements have been defined, which enable an overall movement. The CPEE environment is used for process control.
 
-1. From Home Postion to Glas
+1. From home postion to glas
 2. Pick up the glas
-3. Hover to Ice Machine 
-4. Put the glas on the Ice Machine
+3. Hover to ice machine 
+4. Bring the glas on the ice machine 
 5. Wait until glas is filled with ice
-6. Move Glas away from the Ice Machine
+6. Move glas away from the ice machine 
 7. Put glas down to start postion
-8. Arm goes back to home Position
+8. Robot goes back to home position
 
 ### Video of robot gets ice cubes
 [Video of robot gets ice cubes](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0292e08a-dd6c-4daa-80a3-537b58f087ec)
@@ -33,15 +29,9 @@ A total of 8 sub-movements have been defined, which enable an overall movement. 
 
 
 # Ice Machine 
-An ice cube machine from the manufacturer Klarstein was used for the project. Inside there is a water tank, a cup for making the ice cubes and a spiral that pushes the finished ice  into the dispenser. Once the ice machine has been switched on, the on/off symbol appears on the display. The on/off button must be pressed to switch on the machine.
-
-Folgende Knöpfe sind vorhanden:
-
-On/Off: Ein- bzw. Ausschalten der Maschine
-Timer: Einstellen einer Zeit, Wert auf dem Display steigt mit jedem Drücken um 0,5h
-Select: Auswahl, ob große oder kleine Eiswürfel produziert werden sollen
-Ice: Wechselt den Zustand, ob Eis ausgegeben wird oder nicht
-Water: Wechselt den Zustand, ob Wasser ausgegeben wird oder nicht
+An ice cube machine from the manufacturer Klarstein was used for the project. Inside there is a water tank, a cup for making the ice cubes and a spiral that pushes the finished ice into the dispenser. After the ice cube machine has been plugged into the socket, the on/off symbol appears on the display.
+#### To switch the machine on, press the on/off button. So that the display looks like this:
+![59B8C38F-99DA-40E5-9F92-4835F0F51B44](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0776b5dc-eb08-4ba0-8141-29ae59371ba2)
 
 # Circuit
 The circuit was already assembled last year. There is a multicontroller and an FT232 chip. This allows it to be connected to a computer via a USB-C connection. On the other side, several pins are available for connecting electronic components. Of the pins described above, VCC and RTS were used to build the circuit. For a more detailed documentation see the [git repository from last year](https://gitlab.lrz.de/000000000149F516/tum-prac.git). 
@@ -79,7 +69,8 @@ One hole for the cables and one for the USB stick connection. The holes are exte
 For The 3D print I used the Tinkcard programme.
 Link to the WebPage: [Tinkgard](https://www.tinkercad.com).
 <br>
-Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time.
+Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be bound here: 
+
 ### Tinkcard Design:
 #### Dimensions of the box
 ![TEST](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/1cafd8a7-52c4-430c-b9a9-aa2d23e288b9)
