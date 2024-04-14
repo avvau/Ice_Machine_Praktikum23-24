@@ -19,7 +19,7 @@ A total of 8 sub-movements have been defined, which enable an overall movement. 
 
 
 # CPEE for Process Control
-> CPEE is in the process hub folder [TUM-Prak-23-WS](https://cpee.org/flow/edit.html?monitor=https://cpee.org/flow/engine/36621/) OR 
+> CPEE is in the process hub folder [TUM-Prak-23-WS](https://cpee.org/flow/edit.html?monitor=https://cpee.org/flow/engine/36621/) or `CPEE`
 - Process Execution Engine Endpoints
 ![Endpoints](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/bdba5dd6-84ad-4598-aa1d-f44debefbe53)
 
