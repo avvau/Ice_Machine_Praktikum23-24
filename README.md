@@ -29,7 +29,7 @@ A total of 8 sub-movements have been defined, which enable an overall movement. 
 
 
 # Ice Machine 
-An ice cube machine from the manufacturer Klarstein was used for the project. Inside there is a water tank, a cup for making the ice cubes and a spiral that pushes the finished ice into the dispenser. After the ice cube machine has been plugged into the socket, the on/off symbol appears on the display.
+An ice machine from the manufacturer Klarstein was used for the project. Inside there is a water tank, a cup for making the ice cubes and a spiral that pushes the finished ice into the dispenser. After the ice cube machine has been plugged into the socket, the on/off symbol appears on the display.
 #### To switch the machine on, press the on/off button. So that the display looks like this:
 ![59B8C38F-99DA-40E5-9F92-4835F0F51B44](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/0776b5dc-eb08-4ba0-8141-29ae59371ba2)
 
