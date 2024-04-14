@@ -10,7 +10,7 @@
 - 3D Print
 
 # Context
-Our practical assignment focused on creating a cocktail mix using a robotic. My task within this assignment involved ensuring the drinks remain chilled by filling the glass with ice cubes, facilitated by the robot's assistance. The robot precisely positions the glass beneath the ice cube dispenser, allowing the cubes to fall directly into it. Throughout this process, the robot securely holds the glass to prevent any spillage. Once the glass is filled, the robot places it back and returns to its initial position. This task is accomplished through the coordination of 8 distinct sub-movements, which collectively achieve the desired outcome. We utilized the CPEE environment for process control.
+Our practical assignment focused on creating a cocktail mix using a robot. My task within this assignment involved ensuring the drinks remain chilled by filling the glass with ice cubes, facilitated by the robot's assistance. The robot precisely positions the glass beneath the ice cube dispenser, allowing the cubes to fall directly into it. Throughout this process, the robot securely holds the glass to prevent any spillage. Once the glass is filled, the robot places it back and returns to its initial position. This task is accomplished through the coordination of 8 distinct sub-movements, which collectively achieve the desired outcome. We utilized the CPEE environment for process control.
 
 #### a. The 8 sub-movements
 1. `Home Position to Glass`
