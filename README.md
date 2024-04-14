@@ -45,7 +45,7 @@ The process `GoToMachine` is linked with the endpoint `hovertomachine`. This pro
 The process `PutGlasDown` is associated with the endpoint `putglasdown`. However, contrary to the expected procedure of placing the glass directly beneath the opening from which the ice cubes fall, the robot positions the glass in close proximity to the opening. This proximity ensures that the ice cubes fall directly into the glass, minimizing the risk of any cubes bouncing out from the sides.
 ![IMG_7734](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/489b9813-6422-4f03-b01e-9df140182007)
 ##### 5. Ice Machine
-The `Ice Machine` process is linked with the endpoint `getIce`. During this process, ice cubes are dispensed from the ice machine. A server call with a waiting duration of 5 seconds is implemented here, allowing for the retrieval of the ice cubes. This waiting time can be customized within the endpoints through the URL parameters.
+The `Ice Machine` process is linked with the endpoint `getIce`. During this process, ice cubes are dispensed from the ice machine. A server call with a waiting duration of 5 seconds is set here, allowing for the retrieval of the ice cubes. This waiting time can be customized within the endpoints through the URL parameters.
 ##### 6. GoAway
 The process `GoAway` is connected with the endpoint `awayicemachine`. This step involves removing the glass, now filled with ice cubes, from the ice cube machine.
 ##### 7. DropGlas
@@ -116,6 +116,7 @@ Tinkercad is a free solution for realising 3D projects and is well suited for be
 #### Inner extension for the USB-C stick
 ![TEST](https://github.com/avvau/Ice_Machine_Praktikum23-24/assets/164665089/65be7d99-9076-41a6-ad32-ca20fd48909f)
 
-
-
+> #### Submission Information: <br>
+> This submission is from Asya Uzer. <br>
+> Participation in the practical course: "Sustainable process automation: Humans, Software and the Mediator Pattern".
 
