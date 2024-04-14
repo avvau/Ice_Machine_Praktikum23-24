@@ -1,12 +1,13 @@
 # Ice_Machine_Praktikum23-24
 
 # Structure
-- Context
-- CPEE for process control
-- Ice Machine
-- Circuit
-- Box
-- 3D Print
+- [Context](README.md)
+- [CPEE for process control](README.md)
+- [Ice Machine](README.md)
+- [Circuit](README.md)
+- [Server](README.md)
+- [Box](README.md)
+- [3D Print](README.md)
 
 # Context
 The aim of our praktikum was to make a cocktail mix with the robot. My part of the cocktail mixing task is to fill the glass with ice cubes with the help of the robot so that the drinks stay cool.
