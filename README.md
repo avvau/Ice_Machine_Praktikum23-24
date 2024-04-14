@@ -69,7 +69,7 @@ One hole for the cables and one for the USB stick connection. The holes are exte
 For The 3D print I used the Tinkcard programme.
 Link to the WebPage: [Tinkgard](https://www.tinkercad.com).
 <br>
-Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be bound here: 
+Tinkercad is a free solution for realising 3D projects and is well suited for beginners. Several people can work on a project at the same time. The exported file for 3D printing can be bound here: `3D print`
 
 ### Tinkcard Design:
 #### Dimensions of the box
